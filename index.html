@@ -6,14 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Snake Game</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+     body {
+      background-image: url('img.jpg.jpg');
+      background-size: cover;
+      /* background-position: center; */
+      background-repeat: no-repeat;
+      margin: 0;
+      font-family: sans-serif;
+     
+      
+    }
+
+    .game-area {
+      background-color: rgba(255, 255, 255, 0); /* Optional: adds contrast over the image */
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 420px;
+      margin: 40px auto;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
+  
+  
   <div class="game-area">
     <h1>🐍 Snake Game</h1>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
     <p id="score">Score: 0</p>
     <button onclick="startGame()">Start Game</button>
-
+    
     <!-- 🕹️ Mobile Controls -->
     <div class="mobile-controls">
       <div class="row">

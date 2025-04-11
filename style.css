@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: #000000;
-    color: #ffffffa0;
+    background: #020000;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,9 +27,9 @@ body {
   
   button {
     padding: 0.5rem 1rem;
-    background-color: rgba(242, 255, 0, 0.907);
+    background-color: rgb(19, 19, 18);
     border: none;
-    color: #000;
+    color: #000000f7;
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
@@ -58,8 +58,8 @@ body {
     font-size: 1.5rem;
     padding: 10px 20px;
     margin: 0 5px;
-    background-color: rgb(255, 0, 0);
-    border: none;
+    background-color: rgba(9, 9, 9, 0.827);
+    
     border-radius: 100px;
     color: #000;
     cursor: pointer;
@@ -68,6 +68,7 @@ body {
   
 
 body {
+ 
     margin: 0;
     font-family: 'Arial', sans-serif;
     background: #000000;
@@ -95,12 +96,13 @@ body {
   
   button {
     padding: 0.5rem 1rem;
-    background-color: rgba(242, 255, 0, 0.907);
-    border: none;
-    color: #000;
+    background-color: rgba(5, 5, 5, 0.711);
+    border: 2px solid red;
+    color: #fcfafa;
     font-weight: bold;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 0 0 25px red;
   }
   h1{
     background-color: #000;
