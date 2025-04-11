@@ -1,3 +1,4 @@
+
 const canvas = document.getElementById("gameCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -54,7 +55,6 @@ function drawGame() {
 
   const newHead = { x: headX, y: headY };
 
-  // Game Over conditions
   if (
     headX < 0 || headY < 0 || headX >= canvasSize || headY >= canvasSize ||
     collision(newHead, snake)
@@ -90,3 +90,10 @@ function startGame() {
   clearInterval(gameLoop);
   gameLoop = setInterval(drawGame, 100);
 }
+function setDirectionByTouch(dir) {
+    if (dir === "LEFT" && direction !== "RIGHT") direction = "LEFT";
+    if (dir === "UP" && direction !== "DOWN") direction = "UP";
+    if (dir === "RIGHT" && direction !== "LEFT") direction = "RIGHT";
+    if (dir === "DOWN" && direction !== "UP") direction = "DOWN";
+  }
+  
